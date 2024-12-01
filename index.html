@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="b logo.PNG">
+    <title>Basit Iqbal Bitto</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #0d1117;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header{
+            height: 1px;
+            background-color: #eae9e9;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 37px;
+            top: 0;
+            /*box-shadow: 0px 0px 30px 7px #0d1117;*/
+
+        }
+
+        @media( max-width:425px){
+        .header{
+            padding:27px ;  }
+        }
+
+        .logo{
+            height: 37px;
+            border-radius: 5px;
+        }
+
+        @media( max-width:425px){
+        .logo{
+            height:23px ;  }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 27px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #e16100;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        
+        @media( max-width:650px){
+        nav ul li a {
+            font-size: 17px;  }
+        }
+
+        @media( max-width:425px){
+        nav ul li a {
+            font-size: 15px;
+            margin-right: -10px;  }
+        }
+
+        @media( max-width:320px){
+        nav ul li a {
+            font-size: 10px;
+            margin-right: -10px;  }
+        }
+
+        nav ul li a:hover {
+            color: #ff8120;
+        }   
+
+        nav ul li a:active {
+            color: #9b4300;
+        } 
+       
+        .mainweb{
+            color: #eae9e9;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 1px 3px 5px 1px #875921;
+            padding: 10px 20px;
+            background-color: #ff8000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        @media( max-width:650px){
+        .mainweb {
+            padding: 7px 17px; 
+            font-size:13px; }
+        }
+
+        @media( max-width:425px){
+        .mainweb{
+            padding: 5px 13px; 
+            font-size:13px;  }
+        }
+
+        @media( max-width:320px){
+        .mainweb{
+            padding: 5px 10px; 
+            font-size:10px;  }
+        }
+
+        .mainweb:hover{
+            background-color: #ff952c;
+        }
+
+        .mainweb:active{
+            background-color: #dc6f02;
+        }
+
+        main{
+            box-shadow: 0px 0px 5px 1px #0d1117;
+        }
+
+        .mazor{
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        @media( max-width:705px){
+        .mazor{
+            height: 80vh;  }
+        }
+
+        .mazorp{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 37px 37px 37px 57px;
+        }
+
+        @media( max-width:425px){
+        .mazorp{
+            padding: 30px 30px 30px 20px;  }
+        }
+        
+
+        h1, h2{
+            color: #eae9e9;
+            padding: 17px;
+            font-size: 35px;
+        }
+
+        @media( max-width:867px){
+        h1, h2{
+            font-size: 30px;  }
+        }
+
+        @media( max-width:775px){
+        h1,h2{
+            font-size: 25px;  }
+        }
+
+        @media( max-width:705px){
+        h1,h2{
+            font-size: 23px;  }
+        }
+
+        @media( max-width:650px){
+        h1, h2{
+            font-size: 20px;  }
+        }
+
+        @media( max-width:425px){
+        h1, h2{
+            font-size: 19px;  }
+        }
+        
+
+        .name{
+            color:#ff8000;
+        }
+
+        .mazorpic{
+            width: 50%;
+            height: 100%;
+            margin: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .pp{
+            height:50%;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        @media( max-width:853px){
+        .pp{
+            height: 45%;  }
+        }
+
+        @media( max-width:705px){
+        .pp{
+            height: 37%;  }
+        }
+
+        @media( max-width:425px){
+        .pp{
+            height: 33%;  }
+        }
+
+        .detail{
+            padding: 35px 27px;
+            box-shadow: 0px 0px 5px 1px #b1b1b1;
+            background-color: #b1b1b1;
+        }
+
+        @media( max-width:425px){
+        .detail{
+            padding: 0px 27px;  }
+        }
+
+       /* header{
+            color: #0d1117;
+            text-align: center;
+            font-size: 37px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-top: 63px;
+        }*/
+
+        #about, #contact{
+            padding: 45px 0px;
+        }
+
+        @media( max-width:425px){
+        #about, #contact{
+            padding: 30px 0px;}
+        }
+
+        h3, h5{
+            color:#ff8000;
+            font-size: 35px;
+            margin: 17px 0px 20px 10px;
+        }
+
+        @media( max-width:705px){
+        h3, h5{
+            font-size: 23px;  }
+        }
+
+        @media( max-width:425px){
+        h3, h5{
+            font-size: 23px;  }
+        }
+
+        @media( max-width:320px){
+        li{
+            font-size: 15px;  
+            padding-left: 0;
+        margin-top: 5px;}
+        }
+
+        p{
+            font-size: 17px; 
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            margin-left: 7px;
+            line-height: 27px;
+        }
+
+        
+        @media( max-width:705px){
+        p{
+            font-size: 15px;  }
+        }
+
+        @media( max-width:425px){
+        p{
+            font-size: 13px;  }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 300px;
+        }
+
+        input, textarea, button {
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #f2f2f2;
+            background-color: transparent;
+            outline: none;
+            border: 1.5px solid #4d4d4d;
+            border-radius: 3px;
+            
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #ff6f00;
+            color: #ffffff;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #f28800;
+        }
+
+        #contact{
+            height: 417px;
+            padding-left: 7px;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: space-between;
+        }
+
+        h5{
+            margin-left: 7px;
+        }
+
+        .contact-p{
+            margin: 0;
+        }
+
+        .fa-square-facebook{
+            font-size: 25px;
+            margin-top:3px ;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            color: #0d1117;
+        }
+
+        .fa-linkedin{
+            font-size: 25px;
+            margin-top:3px ;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-bottom: 7px;
+            cursor: pointer;
+            color: #0d1117;
+        }
+
+        
+        .fa-discord{
+            font-size: 22px;
+            margin-top:3px ;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            color: #0d1117;
+        }
+
+        .fa-github{
+            font-size: 23px;
+            margin-top:3px ;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-bottom: 9px;
+            cursor: pointer;
+            color: #0d1117;
+        }
+
+
+        footer{
+            color: #eae9e9;
+            text-align: center;
+            padding-top: 5px;
+            padding-bottom: 7px;
+            font-size: smaller;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <img class="logo" src="b logo.PNG" alt="Logo Of The web">
+        </div>
+        <div class="middle">
+            <nav>
+                <ul>
+                  <li><a href="#about">About</a></li>
+                  <!--<li><a href="#portfolio">Portfolio</a></li>-->
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <a class="mainweb" href="http://bitto29.github.io">Main Website</a>
+        </div>
+    </div>
+    <main>
+        <div class="mazor">
+            <div class="mazorp">
+                <h1>Hey ! <br>This is <strong class="name">Basit Iqbal Bitto</strong></h1>
+                <h2><li>Web developer</li> <li>Prompt engineer</li></h2>
+            </div>
+            <div class="mazorpic">
+                <img class="pp" src="pp.jpg" alt="Profile Pic">
+            </div>
+        </div>
+        <div class="detail">
+           <!-- <header>Detail</header>
+            <p class="medetailp"></p>-->
+
+
+            <div id="about">
+                <h3><strong>About Me</strong></h3>
+                <p class="me">Hey, I'm Bitto, a crative smart boy who loves exploring new technologies and building cool stuff. I'm passionate about coding, gaming, and music. I also have a lot of interest about artificial intelligence (ai). Welcome to my awesome website!</p>
+            </div>
+
+           <!-- <div id="portfolio"></div>-->
+
+            <section id="contact">
+                <h5>Contact Me</h5>
+                <p class="contact-p">
+                  Want to collaborate or just say hi? Feel free to reach out!
+                </p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/profile.php?id=100077225097511"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.facebook.com/basit.iqbal.bitto"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/basit-iqbal-bitto-60bb8626b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://discord.gg/8v9JhUPj"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://github.com/Bitto29"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <form onsubmit="submitForm(); return false;">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                   </form>
+            </section>
+        </div>
+    </main>
+    <footer>&copy; 2024 Bitto - All rights reserved.</footer>
+</body>
+<script src="https://kit.fontawesome.com/ac0f01ecf8.js" crossorigin="anonymous"></script>
+<script> function submitForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      var mailtoLink = 'mailto:bitto3626pc@gmail.com' +
+                       '?subject=' + encodeURIComponent('Message from ' + name) +
+                       '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage: ' + message);
+
+      window.location.href = mailtoLink;
+    }
+  </script>
+</html>
